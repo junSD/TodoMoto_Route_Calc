@@ -1,0 +1,25 @@
+<div class="edit board my-repeat-animation" ng-repeat="board in boardsCtrl.boards">
+    <div class="caption">
+        <button type="button" class="top-right-corner" ng-click="boardsCtrl.remove(board)">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+        <div><input type="text" ng-model="board.title" class="medium" placeholder="Board Title"></div>
+        <div><input type="text" ng-model="board.description" placeholder="Board description."></div>
+        <div class="bottom x-small"><input type="checkbox" ng-model="board.isPublic"> Board is Public</div>
+        <a ng-href="#/board/{{$index}}" type="button" class="view bottom-right-corner">
+            <span class="glyphicon glyphicon-arrow-right"></span>
+        </a>
+    </div>
+</div>
+<div class="create board" ng-controller="BoardCtrl as boardCtrl">
+    <div class="caption">
+        <form name="boardForm">
+            <fieldset>
+                <div><input type="text" class="medium" placeholder="Board Title" required ng-model="boardCtrl.board.title"></div>
+                <div><input type="text" placeholder="Board description." required ng-model="boardCtrl.board.description"></div>
+                <div class="bottom x-small"><input type="checkbox" ng-model="boardCtrl.board.isPublic"> Board is Public</div>
+                <button type="submit" class="bottom-right-corner"><span class="glyphicon glyphicon-plus" ng-click="boardCtrl.add(boardCtrl.board, boardForm)"></span></button>
+            </fieldset>
+        </form>
+    </div>
+</div>

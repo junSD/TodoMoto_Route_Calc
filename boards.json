@@ -1,0 +1,30 @@
+{
+  "boards": {
+    "0": {
+      "title": "Title 1",
+      "description": "Nice board",
+      "isPublic": false,
+      "id": 0,
+      "notes": {
+        "0": {
+          "title": "notetitle1",
+          "description": "my first note",
+          "id": 0
+        }
+      }
+    },
+    "1": {
+      "title": "Title 2",
+      "description": "Not so nice board",
+      "isPublic": true,
+      "id": 1,
+      "notes": {
+        "0": {
+          "title": "notetitle1",
+          "description": "my first note",
+          "id": 0
+        }
+      }
+    }
+  }
+}

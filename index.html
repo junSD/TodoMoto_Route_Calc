@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="noteriousApp">
+
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/calculator.css" />
+
+  </head>
+
+  <body class="bg-blue">
+    <header class="navbar-clear" role="banner">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">
+          <img src="images/logo.png" alt="noterio.us" />
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a class="blue" href="#/calculator">Calculator</a>
+          </li>
+          <li>
+            <a class="blue" href="#/">Boards</a>
+          </li>
+          <li>
+            <a class="blue" href="http://angularjs.org/" target="_blank">AngularJS</a>
+          </li>
+          <li>
+            <a class="blue" href="https://github.com/simpulton/noterious" target="_blank">GITHUB</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </header>
+
+    <!-- Add your site or application content here -->
+    <div>
+      <div id="content-container" ng-view></div>
+    </div>
+
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/angular-route.js"></script>
+    <script type="text/javascript" src="js/app/app.js"></script>
+    <script type="text/javascript" src="js/boards/BoardCtrl.js"></script>
+    <script type="text/javascript" src="js/boards/BoardsCtrl.js"></script>
+    <script type="text/javascript" src="js/boards/BoardsService.js"></script>
+    <script type="text/javascript" src="js/boards/NotesCtrl.js"></script>
+    <script type="text/javascript" src="js/calculator/calculatorCtrl.js"></script>
+    <script type="text/javascript" src="js/route/route.js"></script>
+
+  </body>
+
+</html>
